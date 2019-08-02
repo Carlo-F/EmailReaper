@@ -70,7 +70,7 @@ class EmailReaper
      *
      * @return string
      */
-    public function printEmail()
+    public function printEmails()
     {
         $list = $this->emails;
 
@@ -93,7 +93,7 @@ class EmailReaper
      * @param string $destFile the file where to save the list in
      *
      */
-    public function exportEmail(string $destFile)
+    public function exportEmails(string $destFile)
     {
         $list = $this->emails;
 
