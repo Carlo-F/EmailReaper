@@ -13,5 +13,7 @@
             "email": "carlofeniello@hotmail.it"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=5.3.0"
+    }
 }
