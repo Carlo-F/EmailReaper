@@ -1,0 +1,17 @@
+{
+    "name": "carlof/emailreaper",
+    "description": "A single-class PHP library to extract emails from webpage or plain text file",
+    "keywords": [
+        "email",
+        "extract"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carlo-F",
+            "email": "carlofeniello@hotmail.it"
+        }
+    ],
+    "require": {}
+}
