@@ -6,6 +6,6 @@ $url = 'url-to-search-for-emails';
 
 $reaper = new carloF\EmailReaper($url);
 
-$reaper->printEmail();
+$reaper->printEmails();
 
 ?>
