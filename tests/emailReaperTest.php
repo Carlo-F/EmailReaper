@@ -8,9 +8,9 @@ class emailReaperTest extends TestCase
 {
     public function testResultArray ()
     {
-        $reaper = new carloF\EmailReaper('https://www.artcache.it');
+        $reaper = new carloF\EmailReaper('https://www.google.com');
 
-        $this->assertCount(1, $reaper->getEmails());
+        $this->assertCount(0, $reaper->getEmails());
     }
 
     public function testEmptyArray ()
