@@ -13,6 +13,8 @@
  */
 namespace carloF;
 
+use Exception;
+
 class EmailReaper
 {
     /**
@@ -43,14 +45,22 @@ class EmailReaper
      */
     protected function harvest()
     {
-        $file=file_get_contents($this->sourceFile);
-        $res = preg_match_all("/[a-z0-9]+[_a-z0-9\.-]*[a-z0-9]+@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})/i",$file,$matches);
-        if ($res) {
-            return $this->emails = array_unique($matches[0]);
+        try {
+            $file=file_get_contents($this->sourceFile);
+            if ($file == false) {
+                throw new Exception("404 Resource Not Found", 1);
+            } else {
+                $res = preg_match_all("/[a-z0-9]+[_a-z0-9\.-]*[a-z0-9]+@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})/i",$file,$matches);
+                if ($res) {
+                    $this->emails = array_unique($matches[0]);
+                }
+            }
+            
+        } catch (Exception $e) {
+            echo $e->getMessage();
         }
-        else{
-            return null;
-        }
+        
+        
     }
 
     /**

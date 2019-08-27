@@ -1,8 +1,8 @@
 <?php
 
-require_once "emailReaper.php";
+require_once "src/emailReaper.php";
 
-$url = 'url-to-search-for-emails';
+$url = 'https://www.google.com';
 
 $reaper = new carloF\EmailReaper($url);
 
