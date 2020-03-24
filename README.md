@@ -2,7 +2,7 @@
 
 ## A single-class PHP library to extract emails from webpage or plain text file.
 
-### HOW TO USE
+### HOW TO USE IT
 copy & paste the following code
 ```
 require_once "emailReaper.php";
