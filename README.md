@@ -14,8 +14,8 @@ $reaper = new carloF\EmailReaper($url);
 
 ### PUBLIC METHODS
 
-$reaper->**getEmails()** - return the list (array) of emails found.
+$reaper->**getEmails()** - return an array of found emails.
 
-$reaper->**printEmails()** - echoes the list of emails found.
+$reaper->**printEmails()** - echoes a list of found emails.
 
 $reaper->**exportEmails($destFile)** - save the list in a file ($destFile)
